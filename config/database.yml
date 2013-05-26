@@ -12,11 +12,12 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: test-weixin
+  host: localhost
+  database: test-weixin_dev
   pool: 5
   username: root
-  password: root
-  socket: /var/run/mysqld/mysqld.sock
+  password: "cancan1981"
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -28,8 +29,8 @@ test:
   database: test-weixin_test
   pool: 5
   username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  password: "cancan1981"
+  host: localhost
 
 production:
   adapter: mysql2
@@ -38,5 +39,5 @@ production:
   database: test-weixin_production
   pool: 5
   username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  password: "cancan1981"
+  host: localhost
