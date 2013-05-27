@@ -1,6 +1,8 @@
 # -*- encoding : utf-8 -*-
 TestWeixin::Application.routes.draw do
   resource :weixin
+
+  match '/check-weixin', :to => 'weixins#check'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
